@@ -2,7 +2,7 @@
 
 Este é um exercíco de hello world com a framework CodeIgniter e o MySQL. Este exercicio visa familiarizar a equipa com as ferramentas de denvolvimento e de gestão, como forma de preparação para o projecto em carteira.
 
-## Sistema Inventário Simples
+## Sistema de Inventário Simples
 
 é um sistema de inventário simples para apresentar quais álbuns possuímos. A página principal lista a nossa coleção e permite adicionar, editar e eliminar CDs.
 
