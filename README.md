@@ -25,3 +25,7 @@ Também é necessário armazenar os dados numa base de dados MySQL. Só se preci
 
 Esta especificação é cópia do conteudo do Zend, disponível no link seguinte:
 * [Zend Framework](https://framework.zend.com/manual/2.3/en/user-guide/overview.html) - The tutorial application
+
+* Name:[Celestino António Augusto Langa](https://github.com/CelestinoLanga)
+  Email: celestinolanga11@gmail.com
+  username: @CelestinoLanga
