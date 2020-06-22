@@ -29,3 +29,5 @@ Esta especificação é cópia do conteudo do Zend, disponível no link seguinte
 * Name:[Celestino António Augusto Langa](https://github.com/CelestinoLanga)
   Email: celestinolanga11@gmail.com
   username: @CelestinoLanga
+*Nome [Aderito António Quidissala Pedro] (https://github.com/Aderito-Pedro)
+E-mail: aderitopedro95@gmail.com
