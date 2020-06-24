@@ -31,3 +31,4 @@ Esta especificação é cópia do conteudo do Zend, disponível no link seguinte
   username: @CelestinoLanga
 *Nome [Aderito António Quidissala Pedro] (https://github.com/Aderito-Pedro)
 E-mail: aderitopedro95@gmail.com
+username: @Aderito-Pedro
