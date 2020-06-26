@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #1b1e24;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  margin: 0px 100px 0px 100px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url(../image/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+nav .menu {
+  float: right;
+  list-style: none;
+  margin: 20px 25px;
+}
+
+nav .menu li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #1b1e24;
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+
+nav .menu li a.active {
+  border-bottom: 4px solid #1b1e24;
+}
+
+nav .menu li a:hover {
+  border-bottom: 1px solid #1b1e24;
+  transition: 0.5s linear;
+}
+
+nav .brand {
+  float: left;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+nav .brand a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+  color: #1b1e24;
+  text-transform: uppercase;
+}
+
+.content .wave {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  bottom: 0;
+  left: 0;
+  background: url(../image/wave.png);
+  animation: anime 10s linear infinite;
+}
+
+.content .wave::before {
+  content: "";
+  width: 100%;
+  height: 143px;
+  background: url(../image/wave.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  animation: anime-reverse 10s linear infinite;
+}
+
+.content .wave::after {
+  content: "";
+  width: 100%;
+  height: 143px;
+  background: url(../image/wave.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  animation-delay: -5s;
+  animation: anime 20s linear infinite;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+
+@keyframes anime-reverse {
+  0% {
+    background-position: 1360px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+.content .description {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  margin-left: 70px;
+  width: 450px;
+}
+
+.content .description p {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 17pt;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+/**  STYLE OF REGISTE   **/
+
+.form {
+  position: relative;
+}
+
+.form .form-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  width: 500px;
+}
+
+.form .form-card .form-field {
+  margin-bottom: 20px;
+}
+
+.form .form-card .form-field input {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #1b1e24;
+  margin-top: 5px;
+}
+
+.form .form-card .button button {
+  font-size: 17pt;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #16ca7f;
+  height: 50px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/**  STYLE OF LIST   **/
+
+.list {
+  position: relative;
+}
+
+.list .list-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+
+  width: 100%;
+}
+
+.list .list-content .table {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.list .list-content .table th {
+  color: #d5dde5;
+  background: #1b1e24;
+  border-bottom: 4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 23px;
+  font-weight: 100;
+  padding: 24px;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+}
+
+.list .list-content .table th:first-child {
+  border-top-left-radius: 3px;
+}
+
+.list .list-content .table th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+.list .list-content .table tr {
+  border-top: 1px solid #c1c3d1;
+  border-bottom-: 1px solid #c1c3d1;
+  color: #666b85;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.list .list-content .table tr:hover td {
+  background: #16ca7f;
+  color: #ffffff;
+  border-top: 1px solid #22262e;
+}
+
+.list .list-content .table tr:first-child {
+  border-top: none;
+}
+.list .list-content .table 
+.list .list-content .table tr:last-child {
+  border-bottom: none;
+}
+
+.list .list-content .table tr:nth-child(odd) td {
+  background: #ebebeb;
+}
+
+.list .list-content .table tr:nth-child(odd):hover td {
+  background: #16ca7fa4;
+}
+
+.list .list-content .table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.list .list-content .table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+.list .list-content .table td {
+  background: #ffffff;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #c1c3d1;
+}
+
+.list .list-content .table td:last-child {
+  border-right: 0px;
+}
+
+
+.btn {
+  text-decoration: none;
+  background-color: aqua;
+  padding: 5px;
+  color: #444242;
+  border-radius: 5px;
+}
+
+.primary {
+  background-color: rgb(44, 80, 180);
+  color: #ffffff;
+}
+
+.danger {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.table-color {
+  background-color: #16ca7f57;
+}
+
+/** PAGINATION STYLE **/
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  list-style: none;
+}
+
+.pagination ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #424443;
+  padding: 10px;
+  text-align: center;
+  font-size: 16pt;
+}
