@@ -13,7 +13,7 @@
                             <td><?=$album['artista']?></td>
                             <td><?=$album['titulo']?></td>
                             <td>
-                                <a href="http://" class="btn primary">Editar</a>
+                                <a href="<?= site_url('/home/editar/'.$album['id']);?>" class="btn primary">Editar</a>
                                 <a href="http://" class="btn danger">Eliminar</a>
                             </td>
                         </tr>
