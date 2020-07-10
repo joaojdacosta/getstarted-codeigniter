@@ -98,6 +98,19 @@ class Home extends BaseController
         }
     }
 
+	/*
+	* @Description: method responsavel por fazer a alteração dos dados na model
+	*/
+	public function excluir($id = null){
+        if($this->albumModel->delete($id)){
+            $data = array(
+				'list' => true,
+				'albuns' =>$this->albumModel->findAll()
+			);
+			echo view('header',$data);
+			echo view('list');
+        }
+    }
 	//--------------------------------------------------------------------
 
 }

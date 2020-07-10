@@ -14,7 +14,7 @@
                             <td><?=$album['titulo']?></td>
                             <td>
                                 <a href="<?= site_url('/home/editar/'.$album['id']);?>" class="btn primary">Editar</a>
-                                <a href="http://" class="btn danger">Eliminar</a>
+                                <a href="<?= site_url('/home/excluir/'.$album['id']);?>" class="btn danger" onclick="return confirma()">Eliminar</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

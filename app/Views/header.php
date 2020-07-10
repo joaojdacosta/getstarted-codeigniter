@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css">
 	<title>Sistema de Inventário</title>
+	<script>
+		function confirma() {
+			if(!confirm("Confima a exclusão do registros?")){
+				return false;
+			}
+			return true;
+		}
+	</script>
+
 </head>
 
 <body>
